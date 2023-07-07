@@ -1,0 +1,31 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N802" />
+          <option value="N803" />
+          <option value="N806" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="keras.utils" />
+          <option value="django.step2.my_site.my_site.urls.users" />
+          <option value="main.MyWidget.addButton" />
+          <option value="main.MyWidget.generateButton" />
+          <option value="main.MyWidget.passwordLine" />
+          <option value="main.MyWidget.labelLine" />
+          <option value="main.MyWidget.tableWidget" />
+          <option value="main.MyWidget.listWidget" />
+          <option value="cv2.minAreaRect" />
+          <option value="cv2.boxPoints" />
+          <option value="cv2.COLOR_BGR2HSV" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Распознавание татуировок</title>
+    <style>
+        .fig {
+            text-align: center; /* Выравнивание по центру */
+        }
+        button {
+            align-items: middle;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 align="center">Распознавание татуировок</h1>
+    <div style="left: 6%;position: absolute;width: 1000px;">
+    <form method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+        {{ form1 }}
+        <div>
+            <button type="submit" name="upload">Загрузить</button>
+        </div>
+    </form>
+    </div>
+    <div style="left: 15.34%;position: absolute;width: 1000px;margin-top: 11.92%;">
+    <form method="POST">
+        {% csrf_token %}
+        {{ form2 }}
+        <button type="submit" name="process">Обработать</button>
+    </form>
+    </div>
+
+
+    {% if img_obj %}
+         <p class="fig">
+            <img src="{{ img_obj.image.url}}" alt="connect" style="height:600px" align="center">
+         </p>
+    {% endif %}
+</body>
+</html>
